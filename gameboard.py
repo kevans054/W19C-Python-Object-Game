@@ -42,11 +42,14 @@ class GameBoard:
 
     def checkMove(self, testRow, testColumn):
         if self.board[testRow][testColumn].find("*") != -1:
-            print("Can't move there!")
+            print("Can't move there! Try again.")
             return False
         return True
 
     # TODO
     # Return True if the player is in the winning column and row
     # Return False otherwise
-    # def checkWin(self, playerRow, playerColumn):
+    def checkWin(self, playerRow, playerColumn):
+        if playerRow == 0 and playerColumn == 2:
+            return True
+        return False
