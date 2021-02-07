@@ -20,7 +20,9 @@ player = player.Player(3, 2)
 
 while True:
     board.printBoard(player.rowPosition, player.columnPosition)
+    print(" ")
     selection = input("Make a move: ")
+    print(" ")
     # TODO
     # Move the player through the board
     if selection != "":
